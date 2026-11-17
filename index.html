@@ -176,4 +176,72 @@
       padding: 48px 20px;
     }
 
-    .
+    .section-head {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+
+    .section-head h2 {
+      font-family: 'Cinzel', serif;
+      font-size: 1.9rem;
+      color: var(--gold);
+      margin-bottom: 6px;
+    }
+
+    .section-head p {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 22px;
+    }
+
+    .tier-card {
+      background: var(--surface);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 20px;
+      padding: 28px 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+    }
+
+    .tier-card.vvip {
+      background: linear-gradient(180deg, #1b1710 0%, var(--surface) 100%);
+      border: 2px solid var(--gold);
+      box-shadow: 0 12px 35px rgba(245, 185, 66, 0.14);
+    }
+
+    .popular-tag {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      background: var(--gold-grad);
+      color: #000;
+      font-size: 0.7rem;
+      font-weight: 800;
+      padding: 4px 10px;
+      border-radius: 999px;
+      text-transform: uppercase;
+    }
+
+    .tier-name { font-size: 1.3rem; font-weight: 800; margin-bottom: 6px; }
+    .tier-price { font-size: 2rem; font-weight: 800; color: var(--gold); margin-bottom: 16px; }
+
+    .tier-list { list-style: none; margin-bottom: 24px; color: var(--muted); font-size: 0.94rem; }
+    .tier-list li { margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
+    .tier-list li::before { content: "✦"; color: var(--gold); font-size: 0.85rem; }
+
+    .btn-tier {
+      width: 100%;
+      padding: 13px;
+      border: none;
+      border-radius: 12px;
+      background: var(--surface-light);
+      color: #fff;
+      font-weight: 700;
+      cursor
