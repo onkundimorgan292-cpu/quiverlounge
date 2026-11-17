@@ -1,0 +1,54 @@
+{
+  "event": "Quiver Lounge — The Grand Christmas Mega Show (Dec 25th)",
+  "whatsapp_booking": "0788245106",
+  "hero_banner": {
+    "id": "hero-poster",
+    "title": "December 25th Christmas Mega Show Official Poster",
+    "image_url": "images/hero-poster.jpg",
+    "alt": "Quiver Lounge December 25th Mega Show Poster"
+  },
+  "gallery": [
+    {
+      "id": "photo-1",
+      "category": "poster",
+      "title": "Main Event Lineup & Guest DJs",
+      "caption": "December 25th Mega Show",
+      "image_url": "images/photo-1.jpg"
+    },
+    {
+      "id": "photo-2",
+      "category": "vvip",
+      "title": "VVIP Royal Booths (KES 50,000)",
+      "caption": "Front-row luxury seating & bottle service",
+      "image_url": "images/photo-2.jpg"
+    },
+    {
+      "id": "photo-3",
+      "category": "vip",
+      "title": "VIP Lounge & Elevated Deck (KES 3,000)",
+      "caption": "Exclusive VIP access & lounge bar",
+      "image_url": "images/photo-3.jpg"
+    },
+    {
+      "id": "photo-4",
+      "category": "lounge",
+      "title": "Quiver Lounge Main Dancefloor",
+      "caption": "State-of-the-art sound & lighting",
+      "image_url": "images/photo-4.jpg"
+    },
+    {
+      "id": "photo-5",
+      "category": "drinks",
+      "title": "Premium Bottle Service & Mixology",
+      "caption": "Signature cocktails & top-shelf spirits",
+      "image_url": "images/photo-5.jpg"
+    },
+    {
+      "id": "photo-6",
+      "category": "vibe",
+      "title": "Quiver Nightlife Experience",
+      "caption": "Unmatched nightlife energy",
+      "image_url": "images/photo-6.jpg"
+    }
+  ]
+}
