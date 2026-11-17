@@ -1,125 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Quiver Lounge | December 25th Mega Show</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiver Lounge - December 25th Mega Show</title>
   <style>
-    :root {
-      --bg: #0b0b0f;
-      --card: #15151e;
-      --gold: #f5b942;
-      --gold-dark: #c98f1d;
-      --text: #f4f4f6;
-      --muted: #a1a1b5;
-      --whatsapp: #25d366;
-    }
-    * { box-sizing: border-box; margin: 0; padding: 0; font-family: system-ui, -apple-system, sans-serif; }
-    body { background: var(--bg); color: var(--text); line-height: 1.6; }
-    header {
-      padding: 18px 20px;
-      background: rgba(11, 11, 15, 0.95);
-      border-bottom: 1px solid #262636;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: sticky;
-      top: 0;
-      z-index: 50;
-    }
-    .logo { font-size: 1.3rem; font-weight: 800; letter-spacing: 1.5px; color: var(--gold); }
-    .nav-btn {
-      background: var(--gold);
-      color: #000;
-      padding: 8px 16px;
-      border-radius: 999px;
-      text-decoration: none;
-      font-weight: 700;
-      font-size: 0.9rem;
-    }
-    .hero {
-      text-align: center;
-      padding: 50px 20px 35px;
-      background: radial-gradient(circle at top, #261c0a 0%, var(--bg) 70%);
-    }
-    .badge {
-      display: inline-block;
-      background: rgba(245, 185, 66, 0.15);
-      color: var(--gold);
-      border: 1px solid var(--gold);
-      padding: 5px 14px;
-      border-radius: 999px;
-      font-size: 0.85rem;
-      font-weight: 700;
-      margin-bottom: 14px;
-    }
-    h1 { font-size: 2.2rem; line-height: 1.2; margin-bottom: 12px; }
-    .hero p { color: var(--muted); max-width: 600px; margin: 0 auto 24px; }
-    .hero-poster {
-      max-width: 480px;
-      width: 100%;
-      border-radius: 16px;
-      border: 2px solid #2c2c3d;
-      margin: 0 auto;
-      display: block;
-      background: #1a1a24;
-      min-height: 220px;
-      object-fit: cover;
-    }
-    .container { max-width: 1050px; margin: 0 auto; padding: 30px 20px; }
-    h2 { font-size: 1.6rem; color: var(--gold); margin-bottom: 18px; text-align: center; }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 20px;
-    }
-    .card {
-      background: var(--card);
-      border: 1px solid #262636;
-      border-radius: 16px;
-      padding: 24px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-    .card.featured { border: 2px solid var(--gold); }
-    .tier-title { font-size: 1.25rem; font-weight: 800; margin-bottom: 6px; }
-    .price { font-size: 1.8rem; font-weight: 800; color: var(--gold); margin-bottom: 14px; }
-    .card ul { list-style: none; margin-bottom: 20px; color: var(--muted); font-size: 0.95rem; }
-    .card ul li { margin-bottom: 8px; }
-    .select-btn {
-      width: 100%;
-      padding: 12px;
-      border: none;
-      border-radius: 10px;
-      background: #272738;
-      color: #fff;
-      font-weight: 700;
-      cursor: pointer;
-    }
-    .card.featured .select-btn { background: var(--gold); color: #000; }
-    .gallery-item {
-      background: var(--card);
-      border-radius: 14px;
-      overflow: hidden;
-      border: 1px solid #262636;
-    }
-    .gallery-item img {
-      width: 100%;
-      height: 210px;
-      object-fit: cover;
-      display: block;
-      background: #1e1e2b;
-    }
-    .gallery-caption { padding: 12px 15px; }
-    .gallery-caption h4 { font-size: 1rem; margin-bottom: 4px; }
-    .gallery-caption p { font-size: 0.85rem; color: var(--muted); }
-    .booking-box {
-      background: var(--card);
-      border: 1px solid #2d2d42;
-      border-radius: 18px;
-      padding: 26px;
-      max-width: 560px;
-      margin: 0 auto;
-    }
-    label { display: block; font-size: 0.9rem; margin-bottom: 6px; color: var(--muted); }
+    body { background: #111; color: #fff; font-family: sans-serif; text-align: center; padding: 50px; }
+    h1 { color: #f5b942; font-size: 2.5rem; }
+    .card { background: #222; padding: 20px; margin: 20px auto; max-width: 400px; border-radius: 10px; border: 2px solid #f5b942; }
+    a { display: inline-block; background: #25d366; color: #000; padding: 15px 25px; text-decoration: none; font-weight: bold; border-radius: 8px; margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <h1>Quiver Lounge</h1>
+  <h2>December 25th Christmas Mega Show</h2>
+  
+  <div class="card">
+    <h3>VVIP Royal Booth</h3>
+    <p><b>Price:</b> KES 50,000</p>
+  </div>
+
+  <div class="card">
+    <h3>VIP Access Pass</h3>
+    <p><b>Price:</b> KES 30,000</p>
+  </div>
+
+  <div class="card">
+    <h3>Regular Admission</h3>
+    <p><b>Price:</b> KES 5,000</p>
+  </div>
+
+  <a href="https://wa.me/254788245106?text=Hello%20Quiver%20Lounge,%20I%20want%20to%20book%20for%20Dec%2025th">Book Now via WhatsApp (0788245106)</a>
+</body>
+</html>
