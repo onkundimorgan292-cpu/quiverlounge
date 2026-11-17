@@ -3,33 +3,38 @@
   "whatsapp_booking": "0788245106",
   "hero_banner": {
     "title": "December 25th Christmas Mega Show",
-    "image_url": "images/1794934934950.jpg"
+    "image_url": "images/9761.jpg"
   },
   "gallery": [
     {
-      "title": "December 25th Show Lineup",
-      "caption": "VVIP & VIP Tables Available",
-      "image_url": "images/1794934941608.jpg"
+      "title": "Live DJ & Entertainment Deck",
+      "caption": "Quiver Lounge December 25th Mega Show Vibes",
+      "image_url": "images/9761.jpg"
     },
     {
-      "title": "VVIP Royal Booths",
-      "caption": "KES 50,000 — Bottle Service & Luxury Seating",
-      "image_url": "images/1794934952600.jpg"
+      "title": "VVIP Royal Lounge Experience",
+      "caption": "Exclusive VVIP Seating & Guests",
+      "image_url": "images/9765.jpg"
     },
     {
-      "title": "VIP Deck Access",
-      "caption": "KES 3,000 — Express Entry & Lounge Bar",
-      "image_url": "images/1794934955918.jpg"
+      "title": "VIP Bottle Service & Refreshments",
+      "caption": "Premium Spirits, Champagne & Ice Bucket Setup",
+      "image_url": "images/9764.jpg"
     },
     {
-      "title": "Quiver Main Floor Vibe",
-      "caption": "Live DJs and Ultimate Entertainment",
-      "image_url": "images/1794934971582.jpg"
+      "title": "Luxury Table Setup & Tequila Display",
+      "caption": "Exclusive VVIP & VIP Table Packages",
+      "image_url": "images/9763.jpg"
     },
     {
-      "title": "Premium Drinks & Bottle Service",
-      "caption": "Top-shelf spirits & signature cocktails",
-      "image_url": "images/1794934995016.jpg"
+      "title": "Quiver Lounge Nightlife Vibe",
+      "caption": "Guests enjoying the ultimate party atmosphere",
+      "image_url": "images/9760.jpg"
+    },
+    {
+      "title": "VIP Guest Experience",
+      "caption": "Celebrating in style at Quiver Lounge",
+      "image_url": "images/9762.jpg"
     }
   ]
 }
