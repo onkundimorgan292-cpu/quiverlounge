@@ -244,4 +244,305 @@
       background: var(--surface-light);
       color: #fff;
       font-weight: 700;
-      cursor
+      cursor: pointer;
+    }
+    .tier-card.vvip .btn-tier { background: var(--gold-grad); color: #000; font-weight: 800; }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      gap: 20px;
+    }
+
+    .photo-card {
+      background: var(--surface);
+      border-radius: 18px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      cursor: pointer;
+    }
+
+    .photo-wrap {
+      overflow: hidden;
+      height: 270px;
+      background: #161622;
+    }
+
+    .photo-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .photo-info { padding: 14px 18px; }
+    .photo-info h4 { font-size: 1.02rem; margin-bottom: 3px; color: #fff; }
+    .photo-info p { font-size: 0.84rem; color: var(--muted); }
+
+    .booking-panel {
+      background: var(--surface);
+      border: 1px solid rgba(245, 185, 66, 0.3);
+      border-radius: 22px;
+      padding: 30px 24px;
+      max-width: 560px;
+      margin: 0 auto;
+    }
+
+    label { display: block; font-size: 0.88rem; color: var(--muted); margin-bottom: 6px; font-weight: 600; }
+    input, select, textarea {
+      width: 100%;
+      padding: 13px 14px;
+      margin-bottom: 16px;
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: #0a0a0f;
+      color: #fff;
+      font-size: 0.98rem;
+    }
+
+    .total-summary {
+      background: rgba(245, 185, 66, 0.08);
+      border: 1px solid rgba(245, 185, 66, 0.25);
+      padding: 15px 18px;
+      border-radius: 14px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .total-summary span:last-child { font-size: 1.35rem; font-weight: 800; color: var(--gold); }
+
+    .wa-submit {
+      width: 100%;
+      padding: 16px;
+      background: var(--whatsapp);
+      color: #051b0d;
+      border: none;
+      border-radius: 14px;
+      font-size: 1.05rem;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    .lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.92);
+      z-index: 200;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    .lightbox.open { display: flex; }
+    .lightbox img { max-width: 95%; max-height: 85vh; border-radius: 14px; border: 2px solid var(--gold); }
+    .lightbox-close { position: absolute; top: 20px; right: 24px; color: #fff; font-size: 2rem; cursor: pointer; }
+
+    footer {
+      text-align: center;
+      padding: 36px 20px;
+      color: var(--muted);
+      font-size: 0.85rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="ambient-bg"></div>
+
+  <header>
+    <div class="logo">QUIVER LOUNGE</div>
+    <a href="#book" class="nav-btn">Reserve Table</a>
+  </header>
+
+  <section class="hero">
+    <div class="event-pill"><span class="dot"></span> DECEMBER 25TH • CHRISTMAS MEGA SHOW</div>
+    <h1>The Ultimate Night at Quiver Lounge</h1>
+    <p>Experience unmatched luxury, live DJs, and premium bottle service. Lock in your VVIP, VIP, or Regular pass now via WhatsApp.</p>
+
+    <div class="countdown">
+      <div class="time-box"><span id="days">00</span><small>Days</small></div>
+      <div class="time-box"><span id="hours">00</span><small>Hours</small></div>
+      <div class="time-box"><span id="mins">00</span><small>Mins</small></div>
+      <div class="time-box"><span id="secs">00</span><small>Secs</small></div>
+    </div>
+
+    <div class="hero-frame">
+      <img src="images/1794934934950.jpg" alt="Quiver Lounge December 25th Mega Show" onerror="this.src='https://placehold.co/600x600/111118/f5b942?text=QUIVER+LOUNGE'" />
+    </div>
+  </section>
+
+  <section class="container" id="packages">
+    <div class="section-head">
+      <h2>Ticket & Table Packages</h2>
+      <p>Select your preferred experience for December 25th</p>
+    </div>
+
+    <div class="grid-3">
+      <div class="tier-card vvip">
+        <span class="popular-tag">Royal Booth</span>
+        <div>
+          <div class="tier-name">VVIP Royal Booth</div>
+          <div class="tier-price">KES 50,000</div>
+          <ul class="tier-list">
+            <li>Front-row private VVIP booth</li>
+            <li>Premium bottle service & mixers</li>
+            <li>Fast-track VVIP entry lane</li>
+            <li>Dedicated table hostess</li>
+          </ul>
+        </div>
+        <button class="btn-tier" onclick="selectPackage('VVIP', 50000)">Book VVIP — KES 50,000</button>
+      </div>
+
+      <div class="tier-card">
+        <div>
+          <div class="tier-name">VIP Access Pass</div>
+          <div class="tier-price">KES 30,000</div>
+          <ul class="tier-list">
+            <li>Elevated VIP lounge deck access</li>
+            <li>Priority express VIP entry</li>
+            <li>Welcome signature drink</li>
+            <li>Dedicated VIP bar service</li>
+          </ul>
+        </div>
+        <button class="btn-tier" onclick="selectPackage('VIP', 30000)">Book VIP — KES 30,000</button>
+      </div>
+
+      <div class="tier-card">
+        <div>
+          <div class="tier-name">Regular Admission</div>
+          <div class="tier-price">KES 5,000</div>
+          <ul class="tier-list">
+            <li>General main floor admission</li>
+            <li>Full access to live DJs & mega show</li>
+            <li>Main dancefloor & bar access</li>
+            <li>Group booking options available</li>
+          </ul>
+        </div>
+        <button class="btn-tier" onclick="selectPackage('Regular', 5000)">Book Regular — KES 5,000</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="container" id="gallery">
+    <div class="section-head">
+      <h2>The Quiver Vibe & Gallery</h2>
+      <p>Tap any photo to view full screen</p>
+    </div>
+    <div class="gallery-grid" id="galleryGrid"></div>
+  </section>
+
+  <section class="container" id="book">
+    <div class="section-head">
+      <h2>Instant WhatsApp Booking</h2>
+      <p>Complete your details below to reserve directly with our team</p>
+    </div>
+
+    <div class="booking-panel">
+      <label for="guestName">Your Full Name</label>
+      <input type="text" id="guestName" placeholder="e.g. Morgan Onkundi" />
+
+      <label for="tierSelect">Choose Package</label>
+      <select id="tierSelect" onchange="calculateTotal()">
+        <option value="VVIP|50000">VVIP Royal Booth — KES 50,000</option>
+        <option value="VIP|30000">VIP Access Pass — KES 30,000</option>
+        <option value="Regular|5000">Regular Admission — KES 5,000</option>
+      </select>
+
+      <label for="qty">Number of Tickets / Booths</label>
+      <input type="number" id="qty" value="1" min="1" max="25" oninput="calculateTotal()" />
+
+      <label for="notes">Special Requests (Optional)</label>
+      <textarea id="notes" rows="2" placeholder="Preferred bottle, arrival time, or group size..."></textarea>
+
+      <div class="total-summary">
+        <span>Total Payable:</span>
+        <span id="totalAmount">KES 50,000</span>
+      </div>
+
+      <button class="wa-submit" onclick="bookViaWhatsApp()">Confirm via WhatsApp (0788245106)</button>
+    </div>
+  </section>
+
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <span class="lightbox-close">&times;</span>
+    <img id="lightboxImg" src="" alt="Preview" />
+  </div>
+
+  <footer>
+    Quiver Lounge • December 25th Christmas Mega Show • Bookings & Inquiries: 0788245106
+  </footer>
+
+  <script>
+    const photos = [
+      { title: "December 25th Show Lineup", caption: "VVIP & VIP Tables Available", src: "images/1794934941608.jpg" },
+      { title: "VVIP Royal Booths", caption: "Exclusive VVIP Experience (KES 50,000)", src: "images/1794934952600.jpg" },
+      { title: "VIP Bottle Service", caption: "Champagne, Hennessy & Top-Shelf Spirits", src: "images/1794934955918.jpg" },
+      { title: "Luxury Table & Tequila Display", caption: "VIP & VVIP Table Reservations", src: "images/1794934971582.jpg" },
+      { title: "Quiver Lounge Nightlife", caption: "Unmatched Atmosphere & Energy", src: "images/1794934995016.jpg" },
+      { title: "VIP Guest Experience", caption: "Celebrate December 25th in Style", src: "images/1794934934950.jpg" }
+    ];
+
+    const galleryGrid = document.getElementById("galleryGrid");
+    galleryGrid.innerHTML = photos.map(p => `
+      <div class="photo-card" onclick="openLightbox('${p.src}')">
+        <div class="photo-wrap">
+          <img src="${p.src}" alt="${p.title}" loading="lazy" onerror="this.src='https://placehold.co/600x400/111118/f5b942?text=Quiver+Lounge'" />
+        </div>
+        <div class="photo-info">
+          <h4>${p.title}</h4>
+          <p>${p.caption}</p>
+        </div>
+      </div>
+    `).join("");
+
+    const eventDate = new Date("December 25, 2026 20:00:00").getTime();
+    setInterval(() => {
+      const now = new Date().getTime();
+      const diff = Math.max(0, eventDate - now);
+      document.getElementById("days").textContent = String(Math.floor(diff / (1000 * 60 * 60 * 24))).padStart(2, "0");
+      document.getElementById("hours").textContent = String(Math.floor((diff / (1000 * 60 * 60)) % 24)).padStart(2, "0");
+      document.getElementById("mins").textContent = String(Math.floor((diff / 1000 / 60) % 60)).padStart(2, "0");
+      document.getElementById("secs").textContent = String(Math.floor((diff / 1000) % 60)).padStart(2, "0");
+    }, 1000);
+
+    function selectPackage(name, price) {
+      document.getElementById("tierSelect").value = `${name}|${price}`;
+      calculateTotal();
+      document.getElementById("book").scrollIntoView({ behavior: "smooth" });
+    }
+
+    function calculateTotal() {
+      const [_, price] = document.getElementById("tierSelect").value.split("|");
+      const qty = Math.max(1, parseInt(document.getElementById("qty").value || "1", 10));
+      document.getElementById("totalAmount").textContent = `KES ${(Number(price) * qty).toLocaleString()}`;
+    }
+
+    function bookViaWhatsApp() {
+      const name = document.getElementById("guestName").value.trim() || "Guest";
+      const [tier, price] = document.getElementById("tierSelect").value.split("|");
+      const qty = Math.max(1, parseInt(document.getElementById("qty").value || "1", 10));
+      const total = (Number(price) * qty).toLocaleString();
+      const notes = document.getElementById("notes").value.trim();
+
+      let text = `Hello Quiver Lounge! I want to book for the December 25th Mega Show:\n` +
+                 `• Name: ${name}\n` +
+                 `• Package: ${tier}\n` +
+                 `• Quantity: ${qty}\n` +
+                 `• Total: KES ${total}`;
+      if (notes) text += `\n• Note: ${notes}`;
+
+      window.open(`https://wa.me/254788245106?text=${encodeURIComponent(text)}`, "_blank");
+    }
+
+    function openLightbox(src) {
+      document.getElementById("lightboxImg").src = src;
+      document.getElementById("lightbox").classList.add("open");
+    }
+    function closeLightbox() {
+      document.getElementById("lightbox").classList.remove("open");
+    }
+  </script>
+</body>
+</html>
